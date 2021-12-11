@@ -83,4 +83,51 @@ The Rescue Animal Project developed in CS 340 consisted of developing a full-sta
             raise Exception("Nothing to delete, because the target parameter is empty")
             return False        
 ```
+### Rescue Animal Project Pt.2
+The Rescue Animal Project from CS 340 consisted of developing a full-stack based application through the Dash framework a Python based middleman and a NoSQL MongoDB based database. The primary enhancement performed on the database was adding additional indexes to support our desired queries from the user. The concept behind creating additional indexes in the database is based on the idea that indexes are used to locate specific data faster in the entire database rather than searching every individual object for specific data. By indexing a specific property such as animal breed or their type, the related records to either index will be created in a separate table that links their fields to the individual record. An example of this that many can relate to in normal terms is that it can be very time-consuming reading through an entire book to find where you left off from your last read. We can combat this wasted time by using and placing a bookmark where we left off or even in specific areas, we might’ve found more interesting for future reference. Our database will be operating in the same manner where we want the queries created in our Python module to return the data as fast as possible for the user to see with almost no down time for loading. To make this happen, we introduce our indexes directly into the database. This enhancement on the database demonstrates the concept of managing and optimizing a database to suit the current user’s needs in a more efficient manner. I was able to clearly implement a faster searching speed when indexing the database components correctly. Based on the process of this enhancement, one of the main challenges was identifying which specifics or keywords would be essential to the database based on the users searches. After analyzing the front-end interface and how the user plans to search animals, it was clear that we would be able to optimize the search speed through only a few new indexes.  
+```markdown
+db.animals.createIndex({ breed: 1})
+{
+    "createdCollectionAutomatically": false,
+    "numIndexesBefore" : 1,
+    "numIndexesAfter" : 2,
+    "ok" : 1
+}
+
+db.animals.createIndex({ age: 2})
+{
+    "createdCollectionAutomatically": false,
+    "numIndexesBefore" : 2,
+    "numIndexesAfter" : 3,
+    "ok" : 1
+}
+
+db.animals.createIndex({ sex: 3})
+{
+    "createdCollectionAutomatically": false,
+    "numIndexesBefore" : 3,
+    "numIndexesAfter" : 4,
+    "ok" : 1
+}
+
+db.animals.getIndexes()
+{
+    {
+        "v" : 2,
+        "key" : {
+            "_id" : 1
+        },
+        "name" : "_id_",
+        "ns" : "AAC.animals"
+    },
+    {
+         "v" : 2,
+        "key" : {
+            "breed" : 1
+        },
+        "name" : "breed_1",
+        "ns" : "AAC.animals"
+    }
+}
+```
 
