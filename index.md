@@ -1,9 +1,6 @@
-About Me
+## Ryan Helferich
+My name is Ryan Helferich, I’m 21 years old and currently reside in Austin, TX. I have been in the computer science program at SNHU for about 3 – 3 ½ years now and will be graduating with my Bachelors in Software Engineering December of 2021. I initially found interest in computer science through a brand-new class on Java that my high school had released during my senior year of high school. I’ve always been a creative and innovative person in any field of area in my studies, where I was initially pursing mechanical engineering after I graduated. After losing interest in the idea of mechanical engineering, I decided I wanted to do something just as innovative but with more involvement in the technology itself. Reflecting on my childhood, I was normally the one to hangout inside and test out new games only to find myself trying to figure out how the creators designed something like that. Eventually I was designing my own games, databases and learning how to create something from nothing where an average user can enjoy themselves. I began pursing computer science as a full-time degree and haven’t stopped innovating something different or new ever since. Computer science itself has allowed me to express my ideas and creativity through a whole new mean of growing technology. In this portfolio, I'll go through three of many projects I worked on throughout my classes. Initially below you'll find a code review explaining each one as well as more details on what occured during the development.
 
-
-
-
---
 ### Code Review of Projects
 [![IMAGE ALT TEXT](https://user-images.githubusercontent.com/52177935/145691919-19fc0537-147c-4558-b081-4f85f0a3552b.PNG)](https://www.youtube.com/watch?v=_7mXQKjlJFA "Code Review")
 
