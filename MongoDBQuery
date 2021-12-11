@@ -1,0 +1,56 @@
+db.animals.createIndex({ breed: 1})
+{
+    "createdCollectionAutomatically": false,
+    "numIndexesBefore" : 1,
+    "numIndexesAfter" : 2,
+    "ok" : 1
+}
+
+db.animals.createIndex({ age: 2})
+{
+    "createdCollectionAutomatically": false,
+    "numIndexesBefore" : 2,
+    "numIndexesAfter" : 3,
+    "ok" : 1
+}
+
+db.animals.createIndex({ sex: 3})
+{
+    "createdCollectionAutomatically": false,
+    "numIndexesBefore" : 3,
+    "numIndexesAfter" : 4,
+    "ok" : 1
+}
+
+db.animals.getIndexes()
+{
+    {
+        "v" : 2,
+        "key" : {
+            "_id" : 1
+        },
+        "name" : "_id_",
+        "ns" : "AAC.animals"
+    },
+    {
+         "v" : 2,
+        "key" : {
+            "breed" : 1
+        },
+        "name" : "breed_1",
+        "ns" : "AAC.animals"
+    }
+}
+
+
+/*   
+MONGODB START
+USE Database -> Collection
+CALL Create Index on Collection
+USE Primary fields in CreateIndex(breed, age, sex)
+CHECK index table with new correlations
+*/
+
+
+
+
