@@ -127,4 +127,4 @@ db.animals.getIndexes()
     }
 }
 ```
-
+Throughout my coursework in the Software Engineering program, I’ve come to realize that the development process in any project is never quite finished and can always be enhanced into something more. Computer Science has guided my thinking on how to work around problems, view other’s perspectives and has allowed me to develop the skills needed to conquer any problem. Whether it’s building an API for an older application, optimization a database or laying out the architecture of an entire system from scratch, remaining persistent in difficult situations has allowed me to grow and learn on how to be a better engineer. 
